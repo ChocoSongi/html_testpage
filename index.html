@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="frame1c-container">
+        <div class="frame1c-frame1c">
+          <div class="frame1c-companyinfo">
+            <span class="frame1c-text100"><span>company info</span></span>
+          </div>
+          <div class="frame1c-review">
+            <img
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              alt="backgroundimg2941"
+              class="frame1c-backgroundimg"
+            />
+            <span class="frame1c-text102">
+              <span>Real Experiences, Real Results</span>
+            </span>
+            <div class="frame1c-stars">
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="Star12836"
+                class="frame1c-star1"
+              />
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="Star22836"
+                class="frame1c-star2"
+              />
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="Star32836"
+                class="frame1c-star3"
+              />
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="Star42836"
+                class="frame1c-star4"
+              />
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="Star52836"
+                class="frame1c-star5"
+              />
+            </div>
+            <div class="frame1c-userreviews">
+              <div class="frame1c-review2">
+                <div class="frame1c-frame2">
+                  <span class="frame1c-text104">
+                    <span>
+                      “Fermentation times used to be unpredictable, making
+                      baking stressful. But with SourFriends managing it
+                      automatically, I can relax, go out, and bake at my
+                      convenience.”
+                    </span>
+                  </span>
+                  <span class="frame1c-text106">
+                    <span>Kristin, Chicago, 46</span>
+                  </span>
+                </div>
+              </div>
+              <div class="frame1c-review1">
+                <div class="frame1c-frame1">
+                  <span class="frame1c-text108">
+                    <span>
+                      “As a beginner baker, managing the temperature and
+                      humidity for fermentation was tough. But with SourFriends,
+                      the AI adjusts everything, and I get perfect results every
+                      time.”
+                    </span>
+                  </span>
+                  <span class="frame1c-text110">
+                    <span>Andrea, New York, 27</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <img
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              alt="Rectangle113113"
+              class="frame1c-rectangle11"
+            />
+            <div class="frame1c-downloadbtn1">
+              <div class="frame1c-googlebtn1">
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Rectangle123113"
+                  class="frame1c-rectangle121"
+                />
+                <span class="frame1c-text112">
+                  <span>GET IT ON</span>
+                  <br />
+                  <span>Google Play</span>
+                </span>
+                <div class="frame1c-google-playlogo1">
+                  <img
+                    src="public/external/vector2941-5a7.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector10"
+                  />
+                  <img
+                    src="public/external/vector2941-t9jk.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector11"
+                  />
+                  <img
+                    src="public/external/vector2941-3pwu.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector12"
+                  />
+                  <img
+                    src="public/external/vector2941-vp03.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector13"
+                  />
+                </div>
+              </div>
+              <div class="frame1c-applebtn1">
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Rectangle122941"
+                  class="frame1c-rectangle122"
+                />
+                <span class="frame1c-text116">
+                  <span>Download on the</span>
+                  <br />
+                  <span>App Store</span>
+                </span>
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Applelogo2941"
+                  class="frame1c-applelogo1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="frame1c-machinedetail">
+            <img
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              alt="image12941"
+              class="frame1c-image1"
+            />
+            <span class="frame1c-text120"><span>Meet Our Proofer</span></span>
+            <div class="frame1c-iconmonstrmagnifiertextlined1"></div>
+            <div class="frame1c-group25">
+              <div class="frame1c-group20">
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="iconmonstrweather13712941"
+                  class="frame1c-iconmonstrweather13711"
+                />
+                <span class="frame1c-text122">
+                  <span>Low-Temperature Fermentation</span>
+                </span>
+              </div>
+              <span class="frame1c-text124">
+                <span>
+                  Achieve perfect flavors and textures with controlled, slow
+                  fermentation.
+                </span>
+              </span>
+            </div>
+            <div class="frame1c-group24">
+              <div class="frame1c-group21">
+                <span class="frame1c-text126">
+                  <span>App-Controlled Convenience</span>
+                </span>
+                <div class="frame1c-iconmonstrweather13712">
+                  <img
+                    src="public/external/frame2941-z9d.svg"
+                    alt="Frame2941"
+                    class="frame1c-frame"
+                  />
+                </div>
+              </div>
+              <span class="frame1c-text128">
+                <span>
+                  Schedule and monitor your dough’s rise remotely, ensuring
+                  perfect timing no matter where you are.
+                </span>
+              </span>
+            </div>
+            <div class="frame1c-group23">
+              <div class="frame1c-group22">
+                <span class="frame1c-text130">
+                  <span>2-Liter Capacity</span>
+                </span>
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Vector3113"
+                  class="frame1c-vector14"
+                />
+              </div>
+              <span class="frame1c-text132">
+                <span>
+                  Ideal for home bakers looking to craft beautiful, small-batch
+                  loaves.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="frame1c-experience">
+            <div class="frame1c-group26">
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="bread8128550128012941"
+                class="frame1c-bread812855012801"
+              />
+            </div>
+            <span class="frame1c-text134">
+              <span>
+                By inputting your current location, humidity, and temperature,
+                the AI will find the optimal fermentation time for you!
+              </span>
+            </span>
+            <span class="frame1c-text136">
+              <span>Experience</span>
+              <br />
+              <span>the SMART Yourself!</span>
+            </span>
+            <div class="frame1c-form">
+              <button class="frame1c-submitbutton1">
+                <div class="frame1c-statelayer1">
+                  <span class="frame1c-text140 M3labellarge">
+                    <span>Show Result</span>
+                  </span>
+                </div>
+              </button>
+              <div class="frame1c-group19">
+                <div class="frame1c-group16">
+                  <img
+                    src="public/external/rectangle92941-wk4e-200h.png"
+                    alt="Rectangle92941"
+                    class="frame1c-rectangle91"
+                  />
+                  <span class="frame1c-text142"><span>placeholder</span></span>
+                  <img
+                    src="public/external/vector2941-jye.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector15"
+                  />
+                  <span class="frame1c-text144"><span>Location</span></span>
+                </div>
+                <div class="frame1c-group17">
+                  <img
+                    src="public/external/rectangle92941-9vrp-200h.png"
+                    alt="Rectangle92941"
+                    class="frame1c-rectangle92"
+                  />
+                  <span class="frame1c-text146"><span>placeholder</span></span>
+                  <span class="frame1c-text148"><span>Humidity</span></span>
+                  <img
+                    src="public/external/vector2941-6fuk.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector16"
+                  />
+                </div>
+                <div class="frame1c-group18">
+                  <img
+                    src="public/external/rectangle92941-whmi-200h.png"
+                    alt="Rectangle92941"
+                    class="frame1c-rectangle93"
+                  />
+                  <span class="frame1c-text150"><span>placeholder</span></span>
+                  <span class="frame1c-text152"><span>Temperature</span></span>
+                  <img
+                    src="public/external/vector2941-348c.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector17"
+                  />
+                </div>
+              </div>
+              <span class="frame1c-text154">
+                <span>Calculate Your EFT</span>
+              </span>
+            </div>
+          </div>
+          <div class="frame1c-app">
+            <img
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              alt="background2837"
+              class="frame1c-background1"
+            />
+            <div class="frame1c-apptext3">
+              <span class="frame1c-text156">
+                <span>Convenient scheduling system</span>
+              </span>
+              <span class="frame1c-text158">
+                <span>
+                  Book and receive notifications for your baking schedule
+                  anytime, anywhere, based on your personal timetable.
+                </span>
+              </span>
+            </div>
+            <span class="frame1c-text160">
+              <span>Save your own recipe</span>
+            </span>
+            <div class="frame1c-apptext1">
+              <div class="frame1c-group3">
+                <span class="frame1c-text162">
+                  <span>
+                    AI-based fermentation time prediction service available!
+                  </span>
+                </span>
+                <span class="frame1c-text164">
+                  <span>
+                    AI finds the optimal dough fermentation time based on your
+                    location and preferences.
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="frame1c-appimg21">
+              <span class="frame1c-text166">
+                <span>그래프 등</span>
+                <br />
+                <span>배경없는 이미지</span>
+              </span>
+            </div>
+            <div class="frame1c-appimg11">
+              <div class="frame1c-appimg3">
+                <span class="frame1c-text170"><span>app_img3</span></span>
+              </div>
+              <div class="frame1c-appimg22">
+                <span class="frame1c-text172"><span>app_img2</span></span>
+              </div>
+              <div class="frame1c-appimg12">
+                <span class="frame1c-text174"><span>app_img1</span></span>
+              </div>
+            </div>
+            <img
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              alt="appbanner2919"
+              class="frame1c-appbanner"
+            />
+          </div>
+          <div class="frame1c-banner">
+            <div class="frame1c-background2"></div>
+            <div class="frame1c-group14">
+              <img
+                src="https://play.teleporthq.io/static/svg/default-img.svg"
+                alt="bannerimg2912"
+                class="frame1c-bannerimg1"
+              />
+              <div class="frame1c-group7">
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Ellipse12919"
+                  class="frame1c-ellipse1"
+                />
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Ellipse22919"
+                  class="frame1c-ellipse2"
+                />
+                <img
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  alt="Ellipse32919"
+                  class="frame1c-ellipse3"
+                />
+                <img
+                  src="public/external/ellipse42919-kzhf-200h.png"
+                  alt="Ellipse42919"
+                  class="frame1c-ellipse4"
+                />
+              </div>
+            </div>
+            <div class="frame1c-bannertext">
+              <span class="frame1c-text176">
+                <span class="frame1c-text177">A New journey for</span>
+                <span class="frame1c-text178"></span>
+                <span>Bread</span>
+              </span>
+              <div class="frame1c-email">
+                <div class="frame1c-emailinput">
+                  <div class="frame1c-inputwithlabel">
+                    <span class="frame1c-text180"><span>Email</span></span>
+                    <div class="frame1c-input">
+                      <div class="frame1c-content">
+                        <img
+                          src="public/external/mail2838-yyf.svg"
+                          alt="mail2838"
+                          class="frame1c-mail"
+                        />
+                        <span class="frame1c-text182">
+                          <span>olivia@untitledui.com</span>
+                        </span>
+                      </div>
+                      <div class="frame1c-helpicon"></div>
+                    </div>
+                  </div>
+                  <span class="frame1c-text184">
+                    <span>Get new news every month!</span>
+                  </span>
+                </div>
+                <button class="frame1c-submitbutton2">
+                  <div class="frame1c-statelayer2">
+                    <span class="frame1c-text186 M3labellarge">
+                      <span>Submit</span>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <span class="frame1c-text188">
+                <span>
+                  This app provides all the information about bread from all
+                  over the world. Not only the ingredients and how to make the
+                  bread you love, but also tips to enjoy it! Find warm
+                  information like the scent of freshly baked bread right now.
+                  Download it and experience the best guide for bread lovers!
+                </span>
+              </span>
+            </div>
+            <span class="frame1c-text190"><span>TOASTERZ</span></span>
+            <div class="frame1c-bannerimg2">
+              <span class="frame1c-text192 RegularNoneRegular">
+                <span>Monday, January 25, 2024</span>
+              </span>
+              <div class="frame1c-group15">
+                <div class="frame1c-native-status-bar">
+                  <span class="frame1c-text194 RegularNoneMedium">
+                    <span>9:41</span>
+                  </span>
+                  <div class="frame1c-mobile-signal1">
+                    <img
+                      src="public/external/mobilesignal2919-w57p.svg"
+                      alt="MobileSignal2919"
+                      class="frame1c-mobile-signal2"
+                    />
+                  </div>
+                  <div class="frame1c-wifi">
+                    <img
+                      src="public/external/union2919-h4gvk.svg"
+                      alt="Union2919"
+                      class="frame1c-union"
+                    />
+                  </div>
+                  <div class="frame1c-battery1">
+                    <div class="frame1c-battery2">
+                      <img
+                        src="public/external/rectangle2919-2z0v.svg"
+                        alt="Rectangle2919"
+                        class="frame1c-rectangle1"
+                      />
+                      <img
+                        src="public/external/combinedshape2919-afm.svg"
+                        alt="CombinedShape2919"
+                        class="frame1c-combined-shape"
+                      />
+                      <img
+                        src="public/external/rectangle2919-1asa.svg"
+                        alt="Rectangle2919"
+                        class="frame1c-rectangle2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="frame1c-navigation-bar-large-title">
+                  <span class="frame1c-text196 Title2">
+                    <span>Good morning</span>
+                  </span>
+                </div>
+                <div class="frame1c-bars-tabs-chips">
+                  <div class="frame1c-controls-chips-pill1">
+                    <span class="frame1c-text198 RegularNoneRegular">
+                      <span>World</span>
+                    </span>
+                  </div>
+                  <div class="frame1c-controls-chips-pill2">
+                    <span class="frame1c-text200 RegularNoneRegular">
+                      <span>U.S.</span>
+                    </span>
+                  </div>
+                  <div class="frame1c-controls-chips-pill3">
+                    <span class="frame1c-text202 RegularNoneRegular">
+                      <span>Politics</span>
+                    </span>
+                  </div>
+                  <div class="frame1c-controls-chips-pill4">
+                    <span class="frame1c-text204 RegularNoneRegular">
+                      <span>Tech</span>
+                    </span>
+                  </div>
+                  <div class="frame1c-controls-chips-pill5">
+                    <span class="frame1c-text206 RegularNoneRegular">
+                      <span>Science</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1c-views-dividers">
+                  <img
+                    src="public/external/divider2911-nij-200h.png"
+                    alt="divider2911"
+                    class="frame1c-divider"
+                  />
+                </div>
+                <span class="frame1c-text208 SmallNoneBold">
+                  <span>28°C</span>
+                </span>
+                <div class="frame1c-news-list">
+                  <div class="frame1c-news-small1">
+                    <div class="frame1c-views-images-ratio1">
+                      <img
+                        src="public/external/imageplaceholdercopypastehere2911-93b-200h.png"
+                        alt="ImagePlaceholderCopypastehere2911"
+                        class="frame1c-image-placeholder-copypastehere1"
+                      />
+                    </div>
+                    <div class="frame1c-text210">
+                      <span class="frame1c-text211 SmallNormalBold">
+                        <span>
+                          California Ends Strict Virus Restrictions as New Cases
+                          Fall
+                        </span>
+                      </span>
+                      <span class="frame1c-text213 TinyNormalRegular">
+                        <span>2h ago · by Isabella Kwai</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="frame1c-news-small2">
+                    <div class="frame1c-views-images-ratio2">
+                      <img
+                        src="public/external/imageplaceholdercopypastehere2911-jubc-200h.png"
+                        alt="ImagePlaceholderCopypastehere2911"
+                        class="frame1c-image-placeholder-copypastehere2"
+                      />
+                    </div>
+                    <div class="frame1c-text215">
+                      <span class="frame1c-text216 SmallNormalBold">
+                        <span>
+                          Schools Were Set to Reopen. Then the Teachers’ Union
+                          Stepped In.
+                        </span>
+                      </span>
+                      <span class="frame1c-text218 TinyNormalRegular">
+                        <span>3h ago · by Tracey Trully</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="frame1c-news-small3">
+                    <div class="frame1c-views-images-ratio3">
+                      <img
+                        src="public/external/imageplaceholdercopypastehere2911-qls-200h.png"
+                        alt="ImagePlaceholderCopypastehere2911"
+                        class="frame1c-image-placeholder-copypastehere3"
+                      />
+                    </div>
+                    <div class="frame1c-text220">
+                      <span class="frame1c-text221 SmallNormalBold">
+                        <span>Do Curfews Slow the Coronavirus?</span>
+                      </span>
+                      <span class="frame1c-text223 TinyNormalRegular">
+                        <span>4h ago · by Gina Kolata</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="frame1c-news-small4">
+                    <div class="frame1c-views-images-ratio4">
+                      <img
+                        src="public/external/imageplaceholdercopypastehere2911-x23b-200h.png"
+                        alt="ImagePlaceholderCopypastehere2911"
+                        class="frame1c-image-placeholder-copypastehere4"
+                      />
+                    </div>
+                    <div class="frame1c-text225">
+                      <span class="frame1c-text226 SmallNormalBold">
+                        <span>
+                          54 ZIP Codes in New York City Have Positive Test Rates
+                          Over 10%
+                        </span>
+                      </span>
+                      <span class="frame1c-text228 TinyNormalRegular">
+                        <span>5h ago · by Sharon Otterman</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="frame1c-news-small5">
+                    <div class="frame1c-views-images-ratio5">
+                      <img
+                        src="public/external/imageplaceholdercopypastehere2911-rqi-200h.png"
+                        alt="ImagePlaceholderCopypastehere2911"
+                        class="frame1c-image-placeholder-copypastehere5"
+                      />
+                    </div>
+                    <div class="frame1c-text230">
+                      <span class="frame1c-text231 SmallNormalBold">
+                        <span>
+                          It’s 30 Degrees. Shall We Have Brunch Outdoors?
+                        </span>
+                      </span>
+                      <span class="frame1c-text233 TinyNormalRegular">
+                        <span>6h ago · by Tracey Trully</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame1c-news-big">
+                  <img
+                    src="public/external/image2911-rvzi-200h.png"
+                    alt="Image2911"
+                    class="frame1c-image"
+                  />
+                  <div class="frame1c-text235">
+                    <span class="frame1c-text236 RegularNormalBold">
+                      <span>
+                        A Plan to Rebuild the Bus Terminal Everyone Loves to
+                        Hate
+                      </span>
+                    </span>
+                    <span class="frame1c-text238 TinyNormalRegular">
+                      <span>1h ago · by Troy Corlson</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1c-frame261">
+                  <img
+                    src="public/external/line12911-dieh.svg"
+                    alt="Line12911"
+                    class="frame1c-line1"
+                  />
+                  <img
+                    src="public/external/line22911-pm9.svg"
+                    alt="Line22911"
+                    class="frame1c-line2"
+                  />
+                  <img
+                    src="public/external/line32911-n547.svg"
+                    alt="Line32911"
+                    class="frame1c-line3"
+                  />
+                  <img
+                    src="public/external/line42911-306k.svg"
+                    alt="Line42911"
+                    class="frame1c-line4"
+                  />
+                  <img
+                    src="public/external/ellipse242911-1bw-200h.png"
+                    alt="Ellipse242911"
+                    class="frame1c-ellipse24"
+                  />
+                </div>
+                <img
+                  src="public/external/nativehomeindicator2911-y4c.svg"
+                  alt="NativeHomeIndicator2911"
+                  class="frame1c-native-home-indicator"
+                />
+                <div class="frame1c-bars-tab-bar-icon-only">
+                  <div class="frame1c-frame-partials-tab-bar-icon-only1">
+                    <img
+                      src="public/external/icon2911-s9ob.svg"
+                      alt="Icon2911"
+                      class="frame1c-icon1"
+                    />
+                  </div>
+                  <div class="frame1c-frame-partials-tab-bar-icon-only2">
+                    <img
+                      src="public/external/icon2911-a0uk.svg"
+                      alt="Icon2911"
+                      class="frame1c-icon2"
+                    />
+                  </div>
+                  <div class="frame1c-frame-partials-tab-bar-icon-only3">
+                    <img
+                      src="public/external/icon2911-yc2n.svg"
+                      alt="Icon2911"
+                      class="frame1c-icon3"
+                    />
+                  </div>
+                  <div class="frame1c-frame-partials-tab-bar-icon-only4">
+                    <img
+                      src="public/external/iconplaceholder2911-vzoi.svg"
+                      alt="iconplaceholder2911"
+                      class="frame1c-iconplaceholder"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame1c-downloadbtn2">
+              <div class="frame1c-googlebtn2">
+                <img
+                  src="public/external/rectangle122941-n8f5-200h.png"
+                  alt="Rectangle122941"
+                  class="frame1c-rectangle123"
+                />
+                <span class="frame1c-text240">
+                  <span>GET IT ON</span>
+                  <br />
+                  <span>Google Play</span>
+                </span>
+                <div class="frame1c-google-playlogo2">
+                  <img
+                    src="public/external/vector2941-ubk6.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector18"
+                  />
+                  <img
+                    src="public/external/vector2941-xnl.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector19"
+                  />
+                  <img
+                    src="public/external/vector2941-l2x.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector20"
+                  />
+                  <img
+                    src="public/external/vector2941-iq3s.svg"
+                    alt="Vector2941"
+                    class="frame1c-vector21"
+                  />
+                </div>
+              </div>
+              <div class="frame1c-applebtn2">
+                <img
+                  src="public/external/rectangle122941-7g6c-200h.png"
+                  alt="Rectangle122941"
+                  class="frame1c-rectangle124"
+                />
+                <span class="frame1c-text244">
+                  <span>Download on the</span>
+                  <br />
+                  <span>App Store</span>
+                </span>
+                <img
+                  src="public/external/applelogo2941-gvxf.svg"
+                  alt="Applelogo2941"
+                  class="frame1c-applelogo2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
