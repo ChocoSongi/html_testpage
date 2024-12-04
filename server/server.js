@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 5000;
 const OPENWEATHER_API_KEY = '34ca17f9b51486bfaeaf8d66c7fde8fd';
 
 // Middleware
-const cors = require('cors');
 app.use(cors({
     origin: 'http://localhost:3000',
     methods: ['GET', 'POST'],
