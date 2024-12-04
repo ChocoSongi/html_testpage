@@ -1,0 +1,187 @@
+.Section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ManagementMethodContainer {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+    @media screen and (max-width: 768px) {
+        height: 280px;
+    }
+}
+
+.ManagementMethodText {
+    text-wrap: nowrap;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
+    }
+}
+
+.ManagementMethodHighlight {
+    font-weight: bold;
+}
+
+.ReasonForFailContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ReasonForFailTitle {
+    font-size: 2rem;
+    color: #7B4A30;
+    font-weight: bold;
+    padding: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+}
+
+.ReasonBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1.75rem;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 4px 40px 20px;
+    margin-bottom: 40px;
+    overflow: visible;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.ReasonBoxTitle {
+    text-align: center;
+    font-size: 2.2rem;
+    color: black;
+    padding: 1.2rem 0 1.8rem 0;
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 1rem;
+    }
+}
+
+.ReasonBoxHighlight {
+    font-weight: bold;
+}
+
+.MapContainer {
+    position: relative;
+    width: 100%;
+}
+
+.MapImage {
+    width: 100%;
+}
+
+.PositionImage {
+    width: 5.5vw;
+    height: 5.5vw;
+    animation: PositionAnimation 1s infinite linear alternate-reverse;
+}
+
+@keyframes PositionAnimation {
+    0% {
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    100% {
+        width: 5.8vw;
+        height: 5.8vw;
+    }
+}
+
+.p1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 14%;
+}
+
+.p2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 27%;
+}
+
+.p3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 32%;
+    left: 82%;
+}
+
+.Arrow {
+    position: relative;
+    padding: 10px;
+    animation: ArrowAnimation 1s infinite linear alternate-reverse;
+    margin-bottom: 16px;
+}
+
+@keyframes ArrowAnimation {
+    0% {
+        top: 16px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.ReasonForFailSubtitle {
+    text-align: center;
+    color: black;
+    font-size: 2.2rem;
+    padding: 50px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 1.2rem;
+    }
+}
+
+.ReasonForFailSubtitleAnimation {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+}
+
+.DetailImage {
+    width: 14vw;
+    height: 16vw;
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+}
+
+.d1 {
+    position: absolute;
+    top: calc(30% - 10vw);
+    left: calc(14% + 3vw + 10px);
+}
+
+.d2 {
+    position: absolute;
+    top: calc(68% - 10vw + 20px);
+    left: calc(27% + 3vw + 10px);
+}
+
+.d3 {
+    position: absolute;
+    top: calc(32% - 10vw);
+    left: calc(82% - 3vw - 10px - 14vw);
+}

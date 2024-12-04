@@ -1,0 +1,172 @@
+.Section2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section2Title {
+    text-wrap: nowrap;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 1.4rem;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+.CycleContainer {
+    width: 70%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 475px) {
+        width: 90%;
+    }
+}
+
+.CycleBox {
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 9rem;
+    background-color: #ECE8E6;
+    @media screen and (max-width: 768px) {
+        width: 10rem;
+        height: 10rem;
+    }
+    @media screen and (max-width: 475px) {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.CycleText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 1.4rem;
+    text-wrap: nowrap;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 0.6rem;
+    }
+}
+
+.Section2DeviceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 120px 0;
+    gap: 60px;
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+    justify-content: center;
+    max-width: 90%;
+    @media screen and (max-width: 768px) {
+        gap: 20px;
+    }
+}
+
+.Section2Device {
+    background-color: white;
+    width: 308px;
+    height: 568px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 4px 40px 20px;
+    @media screen and (max-width: 768px) {
+        width: 180px;
+        height: 330px;
+    }
+    @media screen and (max-width: 475px) {
+        width: 160px;
+        height: 295px;
+    }
+}
+
+.Section2DeviceContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    max-width: calc(100% - 308px - 60px);
+    @media screen and (max-width: 768px) {
+        gap: 12px;
+        max-width: calc(100% - 180px - 20px);
+    }
+    @media screen and (max-width: 475px) {
+        gap: 12px;
+        max-width: calc(100% - 160px - 20px);
+    }
+}
+
+.Section2DeviceDescription {
+    font-size: 1.6rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 0.8rem;
+    }
+}
+
+.Section2DeviceTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 475px) {
+        font-size: 0.8rem;
+    }
+}
+
+.Section2DeviceButtonContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: min-content;
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+
+    }
+}
+
+.Section2DeviceButtonImg {
+    width: 290px;
+    height: 64px;
+    @media screen and (max-width: 768px) {
+        width: 220px;
+        height: 49px;
+    }
+    @media screen and (max-width: 475px) {
+        width: 160px;
+        height: 34px;
+    }
+}
+
+.Section2Divider {
+    height: 1px;
+    width: 90%;
+    background-color: #D5D5D5;
+}
+
