@@ -9,54 +9,50 @@ const PORT = process.env.PORT || 5000;
 const OPENWEATHER_API_KEY = '34ca17f9b51486bfaeaf8d66c7fde8fd';
 
 // Middleware
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type'],
-}));
-
+app.use(cors());
 app.use(express.json());
 
-// API Endpoint Example
+// Weather API Endpoint
 app.post('/weather', async (req, res) => {
-    console.log("Incoming request body:", req.body); // 로그 추가
-    const { ip } = req.body;
+  console.log("Incoming request body:", req.body);
 
-    if (!ip) {
-        return res.status(400).json({ error: "IP address is required" });
+  const { ip } = req.body;
+  if (!ip) {
+    return res.status(400).json({ error: "IP address is required" });
+  }
+
+  try {
+    // Fetch location data using IP
+    const ipResponse = await axios.get(`https://ipapi.co/${ip}/json/`);
+    console.log("IP API Response:", ipResponse.data);
+
+    const { latitude, longitude, city, country_name } = ipResponse.data;
+    if (!latitude || !longitude) {
+      return res.status(400).json({ error: "Failed to fetch latitude/longitude" });
     }
 
-    try {
-        // IP API 호출
-        const ipResponse = await axios.get(`https://ipapi.co/${ip}/json/`);
-        console.log("IP API Response:", ipResponse.data); // 로그 추가
-        const { latitude, longitude } = ipResponse.data;
+    // Fetch weather data using coordinates
+    const weatherResponse = await axios.get(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${OPENWEATHER_API_KEY}`
+    );
+    console.log("Weather API Response:", weatherResponse.data);
 
-        if (!latitude || !longitude) {
-            return res.status(400).json({ error: "Failed to fetch latitude/longitude" });
-        }
+    const { temp, humidity } = weatherResponse.data.main;
 
-        // OpenWeatherMap API 호출
-        const weatherResponse = await axios.get(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${OPENWEATHER_API_KEY}`
-        );
-        console.log("Weather API Response:", weatherResponse.data); // 로그 추가
+    res.json({
+      location: `${city}, ${country_name}`,
+      temperature: `${temp} °C`,
+      humidity: `${humidity} %`,
+    });
 
-        const { temp, humidity } = weatherResponse.data.main;
-
-        res.json({
-            location: `${ipResponse.data.city}, ${ipResponse.data.country_name}`,
-            temperature: `${temp} °C`,
-            humidity: `${humidity} %`,
-        });
-    } catch (error) {
-        console.error("Error in fetching weather data:", error.message);
-        res.status(500).json({ error: "Internal server error" });
-    }
+  } catch (error) {
+    console.error("Error in fetching weather data:", error.message);
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 // Serve React static files
-const buildPath = path.join(__dirname, '../client/build');
+const buildPath = path.join(__dirname, '../client/public');
 app.use(express.static(buildPath));
 
 app.get('*', (req, res) => {
